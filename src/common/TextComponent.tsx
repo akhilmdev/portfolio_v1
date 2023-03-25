@@ -16,10 +16,12 @@ const TextComponent: React.FC<Props> = ({
 }) => {
   return (
     <div className={`flex flex-row ${wrapperStyles}`}>
-      {image && (
+      {image ? (
         <img src={image} alt="Example image" className={`${imageStyles}`} />
+      ) : (
+        <></>
       )}
-      {text && <p className={`text-red-300 ${textStyles}`}>{text}</p>}
+      {text ? <p className={`text-red-300 ${textStyles}`}>{text}</p> : <></>}
     </div>
   );
 };
