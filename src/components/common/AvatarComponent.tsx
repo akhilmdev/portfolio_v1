@@ -7,12 +7,12 @@ interface Props {
 }
 const AvatarComponent: React.FC<Props> = ({
   imageURL,
-  imageStyles,
-  wrapperStyles,
+  imageStyles = "",
+  wrapperStyles = "",
 }) => {
   return (
-    <div className={` ${wrapperStyles}`}>
-      <img src={imageURL} alt="Example image" className={`${imageStyles}`} />
+    <div className={`${wrapperStyles}`}>
+      <img src={imageURL} alt="profile image" className={`${imageStyles}`} />
     </div>
   );
 };

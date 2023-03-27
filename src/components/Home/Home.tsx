@@ -6,8 +6,12 @@ interface Props {}
 const Home: React.FC<Props> = () => {
   const { home: homeData } = data;
   return (
-    <div>
-      <AvatarComponent imageURL={homeData.imageURL} />
+    <div className="h-screen w-full	">
+      <AvatarComponent
+        imageURL={homeData.imageURL}
+        wrapperStyles={homeData.avatar.wrapperStyles}
+        imageStyles={homeData.avatar.imageStyles}
+      />
     </div>
   );
 };
