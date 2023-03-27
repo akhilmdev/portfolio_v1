@@ -1,5 +1,5 @@
 import React from "react";
-import TextComponent from "../../common/TextComponent";
+import TextComponent from "../common/TextComponent";
 
 const Experience = () => {
   return (

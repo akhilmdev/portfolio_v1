@@ -1,13 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import Experience from "./components/Experience/Experience";
+import Home from "./components/Home/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="bg-white">
-      <p className="text-6xl w-auto h-auto">Let's start</p>
+      <Home />
       <Experience />
     </div>
   );
