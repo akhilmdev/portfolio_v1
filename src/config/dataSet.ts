@@ -1,10 +1,18 @@
 export const data = {
   home: {
     imageURL: "../assets/profileImage.jpg",
-    title: "Software engineer",
+    title: "Full Stack Software engineer, mentor",
     description: "I am Akhil, Software engineer",
-    yearsOfExperience: "6",
-    featureDone: "200+",
+    attributes: [
+      {
+        number: 6,
+        label: "Year of experience",
+      },
+      {
+        number: "235+",
+        label: "features completed",
+      },
+    ],
     socialMedias: {
       linkedIn: "https://www.linkedin.com/in/akhilmohanan640/",
       github: "https://github.com/akhilmdev",
