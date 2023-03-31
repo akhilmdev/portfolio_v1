@@ -5,7 +5,8 @@ import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="h-screen w-screen bg-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
+      <Home />
       <Home />
       <Experience />
     </div>
