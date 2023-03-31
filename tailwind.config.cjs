@@ -6,7 +6,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      invert: {
+        35: ".35",
+      },
+    },
     screens: {
       xxs: "320",
       xs: "480px",

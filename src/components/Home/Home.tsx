@@ -1,40 +1,31 @@
 import AvatarComponent from "../common/AvatarComponent";
+import HomeLeft from "../common/HomeLeft";
 import { data } from "../../config/dataSet";
-import NumberWithLabel from "../common/NumberWithLabel";
+import HomeRight from "../common/HomeRight";
+import { COLOR } from "../../config/colors";
 
 interface Props {}
 
 const Home: React.FC<Props> = () => {
   const {
-    home: { attributes, avatar, imageURL, title },
+    home: { homeLeft, avatar, imageURL, homeRight },
   } = data;
   return (
-    <div className="h-screen w-full	flex m-4">
-      <div className="flex-col my-auto w-1/3">
-        <div className="text-6xl uppercase text-left mb-12">{title}</div>
-        <div className="flex gap-x-3.5">
-          {attributes.map(
-            ({
-              number,
-              label,
-              ...styles
-            }: {
-              number: string | number;
-              label: string;
-            }) => {
-              return (
-                <NumberWithLabel number={number} label={label} {...styles} />
-              );
-            }
-          )}
-        </div>
+    <div className="relative">
+      <button
+        className={`absolute top-10 right-10 hover:border-black ${COLOR.background900} ${COLOR.text100}`}
+      >
+        Hire Me!
+      </button>
+      <div className="h-screen w-full	flex m-4">
+        <HomeLeft homeLeft={homeLeft} />
+        <AvatarComponent
+          imageURL={imageURL}
+          wrapperStyles={avatar.wrapperStyles}
+          imageStyles={avatar.imageStyles}
+        />
+        <HomeRight homeRight={homeRight} />
       </div>
-      <AvatarComponent
-        imageURL={imageURL}
-        wrapperStyles={avatar.wrapperStyles}
-        imageStyles={avatar.imageStyles}
-      />
-      <div className="w-1/3"></div>
     </div>
   );
 };
