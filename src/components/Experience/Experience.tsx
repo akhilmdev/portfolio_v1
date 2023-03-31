@@ -3,7 +3,7 @@ import TextComponent from "../common/TextComponent";
 
 const Experience = () => {
   return (
-    <div>
+    <div className="h-screen w-screen	snap-start">
       <p>Experience section</p>
       <TextComponent
         text={"i am a prop text"}
