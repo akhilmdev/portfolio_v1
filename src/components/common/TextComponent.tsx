@@ -21,7 +21,7 @@ const TextComponent: React.FC<Props> = ({
       ) : (
         <></>
       )}
-      {text ? <p className={`text-red-300 ${textStyles}`}>{text}</p> : <></>}
+      {text ? <p className={`text-black-200 ${textStyles}`}>{text}</p> : <></>}
     </div>
   );
 };
