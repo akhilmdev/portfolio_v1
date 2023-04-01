@@ -62,13 +62,24 @@ export const data = {
       },
       {
         image: "../assets/react.png",
-        description:
-          "Proficient in reactJs including hooks and redux store",
+        description: "Proficient in reactJs including hooks and redux store",
       },
       {
         image: "../assets/aws.svg",
         description: "Certification in AWS Solution Architect",
       },
+      // {
+      //   image: "../assets/react.png",
+      //   description: "Proficient in reactJs including hooks and redux store",
+      // },
+      // {
+      //   image: "../assets/aws.svg",
+      //   description: "Certification in AWS Solution Architect",
+      // },
+      // {
+      //   image: "../assets/react.png",
+      //   description: "Proficient in reactJs including hooks and redux store",
+      // },
     ],
   },
 };

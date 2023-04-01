@@ -1,37 +1,26 @@
 import React from "react";
 import TextComponent from "../common/TextComponent";
 import { data } from "../../config/dataSet";
+import { useFindClass } from "../../hooks/useFindClass";
 
-const Experience = () => {
-    const { experiencePage } = data;
-    const indexesRight = [0,1];
-    const indexesBottomTop = [3,4,6,7,9,10];
-    const indexBorderTop=[5,8,11,14]
+const Experience = ({cols}: any) => {
+  const { experiencePage } = data;
+  const length = experiencePage.experience.length;
+  const findClass = useFindClass(length,cols);
   return (
-    <div
-      className=" flex flex-col
-     h-screen w-screen	snap-start justify-around items-stretch pt-12"
-    >
-      <p className="text-xl">What I do?</p>
-      <TextComponent
-        text={experiencePage.skillsDescription}
-        textStyles={"text-xs"}
-        wrapperStyles={" justify-center pb-12 pt-2"}
-      />
-      <div className="grid grid-cols-3 mx-20 mb-20">
+    <div className=" flex flex-col pt-28">
+      <div className="mb-12">
+        <p className="text-xl mb-8">What I do?</p>
+        <TextComponent
+          text={experiencePage.skillsDescription}
+          textStyles={"text-xs"}
+          wrapperStyles={" justify-center pb-16 pt-0"}
+        />
+      </div>
+
+      <div className={`grid grid-cols-${cols} mx-20 mb-28`}>
         {experiencePage.experience.map((_item, _index) => (
-          <div
-            key={_item.description}
-            className={
-              indexesRight.includes(_index)
-                ? "border-r-2 border-gray-300 bg-white "
-                : indexesBottomTop.includes(_index)
-                ? "border-r-2 border-t-2 border-gray-300"
-                : indexBorderTop.includes(_index)
-                ? "border-t-2 border-gray-300"
-                : ""
-            }
-          >
+          <div key={_item.description} className={findClass(_index)}>
             <TextComponent
               image={_item.image}
               text={_item.description}
