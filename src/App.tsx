@@ -1,14 +1,14 @@
-import { useState } from "react";
 import "./App.css";
+import ScrollMouse from "./components/common/scrollMouse";
 import Experience from "./components/Experience/Experience";
 import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden">
-      <Home />
+    <div className="h-screen w-full bg-white relative">
       <Home />
       <Experience />
+      <ScrollMouse />
     </div>
   );
 }
