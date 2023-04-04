@@ -1,6 +1,15 @@
 export const data = {
   home: {
     imageURL: "../assets/profileImage.jpg",
+    header: {
+      resumeURL: "./Resume.pdf",
+      items: [
+        { label: "Home", id: "homePage" },
+        { label: "Experience", id: "experiencePage" },
+        { label: "Portfolio", id: "portfolioPage" },
+        { label: "Contact", id: "contactPage" },
+      ],
+    },
     homeLeft: {
       title: "Full Stack Software engineer, mentor",
       attributes: [
@@ -31,6 +40,11 @@ export const data = {
           link: "https://www.instagram.com/akhilmohanan12/",
         },
       ],
+      hireMe: {
+        phone: "+91 9447818354",
+        location: "Kerala, India",
+        email: "akhilm640@gmail.com",
+      },
     },
     avatar: {
       wrapperStyles: "h-full	m-auto flex",
