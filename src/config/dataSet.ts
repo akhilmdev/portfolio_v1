@@ -68,18 +68,9 @@ export const data = {
         image: "../assets/aws.svg",
         description: "Certification in AWS Solution Architect",
       },
-      // {
-      //   image: "../assets/react.png",
-      //   description: "Proficient in reactJs including hooks and redux store",
-      // },
-      // {
-      //   image: "../assets/aws.svg",
-      //   description: "Certification in AWS Solution Architect",
-      // },
-      // {
-      //   image: "../assets/react.png",
-      //   description: "Proficient in reactJs including hooks and redux store",
-      // },
     ],
+    column_grids_style:"cols-grid-3",
+    columns:"3"
+
   },
 };
