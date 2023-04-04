@@ -4,7 +4,7 @@ interface Props {
 }
 const Menu: React.FC<Props> = ({ items, wrapperStyles = "" }) => {
   return (
-    <div className="wrapperStyles">
+    <div className="wrapperStyles grow mr-24">
       <nav
         className="mx-auto flex max-w-7xl items-center lg:p-6 lg:px-8 lg:justify-center md:justify-start md:p-4"
         aria-label="Global"

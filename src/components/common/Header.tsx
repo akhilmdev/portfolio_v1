@@ -4,13 +4,23 @@ import Menu from "./Menu";
 interface Props {
   resumeURL: string;
   items: { label: string; id: string }[];
+  name: string;
   wrapperStyles?: string;
 }
-const Header: React.FC<Props> = ({ resumeURL, items, wrapperStyles = "" }) => {
+
+const Header: React.FC<Props> = ({
+  resumeURL,
+  items,
+  wrapperStyles = "",
+  name,
+}) => {
   return (
     <div
-      className={`border-solid border-b p-4 ${COLOR.boaderColor} ${wrapperStyles}`}
+      className={`flex border-solid border-b p-4 ${COLOR.boaderColor} ${wrapperStyles}`}
     >
+      <p className="flex m-auto ml-0 font-bold text-3xl grow-1 font-alkatra">
+        {name}
+      </p>
       <Menu items={items} />
       <a href={resumeURL} download="resume" className="hidden md:inline">
         <button

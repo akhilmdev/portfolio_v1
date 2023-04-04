@@ -9,6 +9,7 @@ export const data = {
         { label: "Portfolio", id: "portfolioPage" },
         { label: "Contact", id: "contactPage" },
       ],
+      name: "Akhil M",
     },
     homeLeft: {
       title: "Full Stack Software engineer, mentor",
