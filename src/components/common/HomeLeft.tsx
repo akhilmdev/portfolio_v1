@@ -13,8 +13,10 @@ const HomeLeft: React.FC<Props> = ({
   homeLeft: { title, attributes },
 }) => {
   return (
-    <div className={`flex-col my-auto w-1/3 ${wrapperStyles}`}>
-      <div className="text-6xl uppercase text-left mb-12">{title}</div>
+    <div className={`flex-col my-auto w-1/3 md:ml-3 ${wrapperStyles}`}>
+      <div className="lg:text-6xl md:text-5xl uppercase text-left mb-48">
+        {title}
+      </div>
       <div className="flex gap-x-3.5">
         {attributes.map(
           ({
@@ -26,7 +28,12 @@ const HomeLeft: React.FC<Props> = ({
             label: string;
           }) => {
             return (
-              <NumberWithLabel number={number} label={label} {...styles} />
+              <NumberWithLabel
+                number={number}
+                label={label}
+                {...styles}
+                key={label}
+              />
             );
           }
         )}
