@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="h-screen w-full bg-white relative">
       <Home />
-      <Experience />
+      <Experience cols= "3" />
       <ScrollMouse />
     </div>
   );
