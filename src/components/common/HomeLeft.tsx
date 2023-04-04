@@ -14,7 +14,9 @@ const HomeLeft: React.FC<Props> = ({
 }) => {
   return (
     <div className={`flex-col my-auto w-1/3 md:ml-3 ${wrapperStyles}`}>
-      <div className="text-6xl uppercase text-left mb-48">{title}</div>
+      <div className="lg:text-6xl md:text-5xl uppercase text-left mb-48">
+        {title}
+      </div>
       <div className="flex gap-x-3.5">
         {attributes.map(
           ({

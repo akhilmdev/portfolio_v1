@@ -49,7 +49,7 @@ export const data = {
     avatar: {
       wrapperStyles: "h-full	m-auto flex",
       imageStyles:
-        "rounded-full grayscale hover:grayscale-0	duration-300 ease-linear border-2 border-slate-200 w-32 h-32 md:w-56 md:h-56 lg:w-64 lg:h-64 m-auto",
+        "rounded-full grayscale hover:grayscale-0	duration-300 ease-linear border-2 border-slate-200 w-32 h-32 md:w-56 md:h-56 lg:w-64 lg:h-64 m-auto lg:mt-56 md:mt-48",
     },
   },
   experiencePage: {

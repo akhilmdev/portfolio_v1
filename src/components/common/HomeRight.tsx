@@ -15,7 +15,7 @@ const HomeRight: React.FC<Props> = ({
 }) => {
   return (
     <div className={`flex-col my-auto w-1/3 ${wrapperStyles}`}>
-      <div className="text-2xl uppercase text-left mb-6 leading-8">
+      <div className="lg:text-2xl md:text-lg uppercase mb-6 leading-8 font-alkatra text-center">
         {description}
       </div>
       <div className="flex gap-x-5 w-full justify-center">
@@ -38,7 +38,7 @@ const HomeRight: React.FC<Props> = ({
           );
         })}
       </div>
-      <div className="flex flex-col gap-2 mt-56 justify-center">
+      <div className="flex flex-col gap-2 lg:mt-56 md:mt-44 justify-center">
         <p className="text-xs">*Hire me!</p>
         <p className="text-xl font-semibold">{hireMe.location}</p>
         <p className="text-xl font-semibold">{hireMe.email}</p>
