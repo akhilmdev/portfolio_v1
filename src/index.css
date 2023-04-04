@@ -81,7 +81,7 @@ button:focus-visible {
 .timeline {
   margin: 0 auto;
   justify-content: center;
-  max-width: 850px;
+  max-width: 1250px;
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
@@ -107,7 +107,7 @@ button:focus-visible {
 
 .timeline__middle {
   position: relative;
-  background: #8a7878;
+  background: #b19797;
   width: .5px;
 }
 
@@ -132,23 +132,44 @@ button:focus-visible {
 .timeline__date--right {
   text-align: right;
   font-size: small;
+  /* margin-bottom: 30px; */
+    color:#706f6f
+
 }
 
 .timeline__date--left {
   text-align: left;
     font-size: small;
+      color:#706f6f
 }
 
 .timeline__title {
   margin: 0;
   font-size: 1.15em;
-  font-weight: bold;
+  font-weight: normal;
+  font-style: italic;
+  /* color:#855151 */
 }
 
 .timeline__paragraph {
   line-height: 1.5;
-  max-width: 400px;
+  max-width: 800px;
   white-space: initial;
   word-wrap: break-word;
   flex-wrap: wrap;
+  color:#706f6f
+}
+
+.timeline__para {
+  /* line-height: 1.5;
+  max-width: 600px;
+  white-space: initial;
+  word-wrap: break-word;
+  flex-wrap: wrap; */
+  color:#706f6f
+}
+
+.border_line {
+  color:#b19797;
+  border-color: #b19797;
 }

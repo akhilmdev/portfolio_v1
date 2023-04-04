@@ -16,11 +16,11 @@ const Experience = ({cols, style}:any) => {
         <TextComponent
           text={experiencePage.skillsDescription}
           textStyles={"text-3xs"}
-          wrapperStyles={" justify-center pb-16 pt-0"}
+          wrapperStyles={" justify-center pb-12 pt-0"}
         />
       </div>
 
-      <div className={`grid ${style} mx-20 mb-28 pt-4`}>
+      <div className={`grid ${style} mx-20 mb-28 pt-2`}>
         {experiencePage.experience.map((_item, _index) => (
           <div key={_item.description} className={findClass(_index)}>
             <TextComponent
@@ -28,9 +28,9 @@ const Experience = ({cols, style}:any) => {
               text={_item.description}
               imageStyles={"w-16 h-16"}
               textStyles={
-                "leading-normal font-serif text-xs text-zinc-600 border-2 border-white contents"
+                "leading-none font-serif text-xs text-zinc-600 border-2 border-white pt-2 text-left"
               }
-              wrapperStyles="leading-normal h-32 p-4 flex flex-col justify-start items-center"
+              wrapperStyles="h-32 p-4 flex flex-col justify-start items-center"
             />
           </div>
         ))}
