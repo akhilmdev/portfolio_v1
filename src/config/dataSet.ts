@@ -83,18 +83,60 @@ export const data = {
         image: "../assets/aws.svg",
         description: "Certification in AWS Solution Architect",
       },
-      // {
-      //   image: "../assets/react.png",
-      //   description: "Proficient in reactJs including hooks and redux store",
-      // },
-      // {
-      //   image: "../assets/aws.svg",
-      //   description: "Certification in AWS Solution Architect",
-      // },
-      // {
-      //   image: "../assets/react.png",
-      //   description: "Proficient in reactJs including hooks and redux store",
-      // },
+      {
+        image: "../assets/javascript.png",
+        description: "3 years of exp in javascript",
+      },
+      {
+        image: "../assets/testing.png",
+        description:
+          "good knowledge in unit testing using enzyme and react testing library",
+      },
+
+      {
+        image: "../assets/big-data.png",
+        description: "expertise in working with firebase and cloud systems",
+      },
+      {
+        image: "../assets/htmlcss.png",
+        description: "3 years of experience in html and css",
+      },
+      {
+        image: "../assets/react.png",
+        description: "Proficient in reactJs including hooks and redux store",
+      },
+      {
+        image: "../assets/aws.svg",
+        description: "Certification in AWS Solution Architect",
+      },
+    ],
+    column_grids_style: "cols-grid-3",
+    columns: "3",
+  },
+  experienceList: {
+    title: "EXPERIENCE",
+    list: [
+      {
+        year: "2050 May - 2018 June",
+        role: "Front End Developer",
+        company: "TCS",
+        jobDescription:
+          "2050 simply dummy text of the printing and typesetting industry. LoremIpsum has been the industry's standard dummy text ever since the",
+      },
+      {
+        year: "2037 May - 2018 June",
+        role: "Full Stack Developer",
+        company: "Experion Technologies",
+        jobDescription:
+          "2038 simply dummy text of the printing and typesetting industry. LoremIpsum has been the industry's standard dummy text ever since the",
+      },
+      {
+        year: "2047 May - 2018 June",
+        role: "Full Stack Developer",
+        company: "Qburst",
+        jobDescription:
+          "2047 simply dummy text of the printing and typesetting industry. LoremIpsum has been the industry's standard dummy text ever since the",
+      },
     ],
   },
 };

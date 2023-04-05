@@ -12,11 +12,11 @@ export const useFindClass: (
     setFindClass(() => (index: number) => {
       return index + 1 >= (Math.ceil(length / cols) - 1) * cols + 1 &&
         index + 1 !== Math.ceil(length / cols) * cols
-        ? "border-r-2 border-gray-300 bg-white"
-        :(index + 1) % cols === 0 && index + 1 !== length
-        ? "border-b-2 border-gray-300 bg-white"
+        ? "border-r border_line"
+        : (index + 1) % cols === 0 && index + 1 !== length
+        ? "border-b border_line"
         : (index + 1) % cols !== 0 && index + 1 !== length
-        ? "border-b-2 border-r-2 border-gray-300 bg-white"
+        ? "border-b border-r border_line"
         : "";
     });
   }, [length, cols]);

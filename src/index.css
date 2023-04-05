@@ -76,3 +76,100 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.timeline {
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1250px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #000000;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgb(255, 255, 255);
+  box-shadow: 1px 5px 10px rgb(165, 150, 150);
+  border-radius: 10px;
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #b19797;
+  width: .5px;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: .5px solid #b19797;
+  border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+  font-size: small;
+  /* margin-bottom: 30px; */
+    color:#706f6f
+
+}
+
+.timeline__date--left {
+  text-align: left;
+    font-size: small;
+      color:#706f6f
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: normal;
+  font-style: italic;
+  /* color:#855151 */
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+  max-width: 800px;
+  white-space: initial;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  color:#706f6f
+}
+
+.timeline__para {
+  /* line-height: 1.5;
+  max-width: 600px;
+  white-space: initial;
+  word-wrap: break-word;
+  flex-wrap: wrap; */
+  color:#706f6f
+}
+
+.border_line {
+  color:#b19797;
+  border-color: #b19797;
+}

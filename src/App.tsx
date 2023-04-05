@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import ScrollTop from "./components/common/scrollTop";
+import ScrollMouse from "./components/common/scrollMouse";
 import Experience from "./components/Experience/Experience";
 import Home from "./components/Home/Home";
+import { data } from "../src/config/dataSet";
+import ExperienceList from "./components/ExperienceList/ExperienceList";
 
 function App() {
   const [height, setHeight] = useState(window.scrollY);
@@ -14,8 +16,9 @@ function App() {
   return (
     <div className="h-screen w-full bg-white relative">
       <Home />
-      <Experience cols="3" />
-      <ScrollTop height={height} />
+      <Experience cols={4} style={"grid-cols-4"} />
+      <ScrollMouse />
+      <ExperienceList/>
     </div>
   );
 }
