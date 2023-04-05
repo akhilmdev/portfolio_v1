@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import ScrollTop from "./components/common/scrollTop";
+import ScrollMouse from "./components/common/scrollMouse";
 import Experience from "./components/Experience/Experience";
 import Home from "./components/Home/Home";
 import { data } from "../src/config/dataSet";
@@ -17,7 +17,7 @@ function App() {
     <div className="h-screen w-full bg-white relative">
       <Home />
       <Experience cols={4} style={"grid-cols-4"} />
-      {/* <ScrollMouse /> */}
+      <ScrollMouse />
       <ExperienceList/>
     </div>
   );

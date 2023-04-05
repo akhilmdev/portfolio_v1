@@ -4,8 +4,6 @@ import { data } from "../../config/dataSet";
 import { useFindClass } from "../../hooks/useFindClass";
 
 const Experience = ({cols, style}:any) => {
-  console.log("cols", cols);
-  console.log("style", style);
   const { experiencePage } = data;
   const length = experiencePage.experience.length;
   const findClass = useFindClass(length,cols);
