@@ -11,7 +11,7 @@ const Works: React.FC<Props> = () => {
   const { works } = data;
 
   return (
-    <div className="w-10/12 m-auto  h-screen pt-24">
+    <div className="w-10/12 m-auto min-h-screen pt-24">
       <p className="text-4xl mb-8">
         What I had <b>done</b>?
       </p>

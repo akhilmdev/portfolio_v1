@@ -1,12 +1,14 @@
-import React from 'react'
-import { data } from '../../config/dataSet';
+import React from "react";
+import { data } from "../../config/dataSet";
 const ExperienceList = () => {
-    const { experienceList } = data;
-    const experience = experienceList.list
-    console.log("experience", experience);
+  const { experienceList } = data;
+  const experience = experienceList.list;
+  console.log("experience", experience);
   return (
-    <div className="w-full h-full">
-      <p className="text-3xl pt-6 pb-16 text-black">EXPERIENCE</p>
+    <div className="w-full">
+      <p className="text-4xl mb-8 pt-6 text-black">
+        What I am <b>doing</b>?
+      </p>
       <div className="timeline">
         {experience.map((item: any, index) =>
           (index + 1) % 2 === 0 ? (
@@ -51,9 +53,7 @@ const ExperienceList = () => {
                 <div className="timeline__point"></div>
               </div>
               <div className="timeline__component timeline__date--left">
-                <div className="timeline__date italic">
-                  {item.year}
-                </div>
+                <div className="timeline__date italic">{item.year}</div>
               </div>
             </>
           )
@@ -61,6 +61,6 @@ const ExperienceList = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ExperienceList
+export default ExperienceList;

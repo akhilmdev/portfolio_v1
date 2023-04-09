@@ -3,14 +3,16 @@ import TextComponent from "../common/TextComponent";
 import { data } from "../../config/dataSet";
 import { useFindClass } from "../../hooks/useFindClass";
 
-const Experience = ({cols, style}:any) => {
+const Experience = ({ cols, style }: any) => {
   const { experiencePage } = data;
   const length = experiencePage.experience.length;
-  const findClass = useFindClass(length,cols);
+  const findClass = useFindClass(length, cols);
   return (
-    <div className=" h-screen w-full flex flex-col pt-20">
+    <div className="w-full flex flex-col pt-20">
       <div className="mb-12">
-        <p className="text-4xl mb-8">What I do?</p>
+        <p className="text-4xl mb-8">
+          What I <b>do</b>?
+        </p>
         <TextComponent
           text={experiencePage.skillsDescription}
           textStyles={"text-3xs"}

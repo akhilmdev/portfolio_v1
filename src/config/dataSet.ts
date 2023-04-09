@@ -27,20 +27,6 @@ export const data = {
     homeRight: {
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ",
-      socialMedias: [
-        {
-          icon: "../assets/linkedin.png",
-          link: "https://www.linkedin.com/in/akhilmohanan640/",
-        },
-        {
-          icon: "../assets/github.png",
-          link: "https://github.com/akhilmdev",
-        },
-        {
-          icon: "../assets/instagramHover.png",
-          link: "https://www.instagram.com/akhilmohanan12/",
-        },
-      ],
       hireMe: {
         phone: "+91 9447818354",
         location: "Kerala, India",
@@ -163,6 +149,29 @@ export const data = {
         { icon: "../assets/github.png", link: "https://github.com/akhilmdev" },
         { icon: "../assets/share.png", link: "https://github.com/akhilmdev" },
       ],
+    },
+  ],
+  contactMe: {
+    title: "Get in <b>Touch</b>?",
+    description: `Although I’m not currently looking for any new opportunities, my inbox
+    is always open. Whether you have a question or just want to say hi, I’ll
+    try my best to get back to you!`,
+    buttonText: "Say Hello!",
+    footerMessage:
+      "<p>Designed & Built by <b>Akhil M</b> and <b>jithin k</b></p>",
+  },
+  socialMedias: [
+    {
+      icon: "../assets/linkedin.png",
+      link: "https://www.linkedin.com/in/akhilmohanan640/",
+    },
+    {
+      icon: "../assets/github.png",
+      link: "https://github.com/akhilmdev",
+    },
+    {
+      icon: "../assets/instagramHover.png",
+      link: "https://www.instagram.com/akhilmohanan12/",
     },
   ],
 };
