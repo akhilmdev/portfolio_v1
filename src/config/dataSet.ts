@@ -131,7 +131,7 @@ export const data = {
       name: "potfolio",
       imageURL: "../assets/portfolio.png",
       description:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been, lorem ipsum has been lorem ipsum has been card",
+        "Lorem ipsum is simply dummy text of the printing and typesetting industry. <b>lorem ipsum has been</b>, lorem ipsum has been lorem ipsum has been card",
       tools: ["vs code", "git"],
       links: [
         { icon: "../assets/github.png", link: "https://github.com/akhilmdev" },
