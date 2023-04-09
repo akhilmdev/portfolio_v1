@@ -139,4 +139,30 @@ export const data = {
       },
     ],
   },
+  works: [
+    {
+      title: "Featured Project",
+      name: "potfolio",
+      imageURL: "../assets/portfolio.png",
+      description:
+        "Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been, lorem ipsum has been lorem ipsum has been card",
+      tools: ["vs code", "git"],
+      links: [
+        { icon: "../assets/github.png", link: "https://github.com/akhilmdev" },
+        { icon: "../assets/share.png", link: "https://github.com/akhilmdev" },
+      ],
+    },
+    {
+      title: "Featured Project",
+      name: "potfolio",
+      imageURL: "../assets/portfolio.png",
+      description:
+        "Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been, lorem ipsum has been lorem ipsum has been card",
+      tools: ["vs code", "git"],
+      links: [
+        { icon: "../assets/github.png", link: "https://github.com/akhilmdev" },
+        { icon: "../assets/share.png", link: "https://github.com/akhilmdev" },
+      ],
+    },
+  ],
 };
