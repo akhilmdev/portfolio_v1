@@ -17,8 +17,9 @@ function App() {
     <div className="h-screen w-full bg-white relative">
       <Home />
       <Experience cols={4} style={"grid-cols-4"} />
-      <ScrollMouse />
       <ExperienceList />
+      <Works />
+      <ScrollTop height={height} />
     </div>
   );
 }
