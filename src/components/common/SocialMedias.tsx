@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
 import { COLOR } from "../../config/colors";
 import { data } from "../../config/dataSet";
 
-const SocialMedias: React.FC<Props> = () => {
+interface Props {
+  height: number;
+}
+
+const SocialMedias: React.FC<Props> = ({ height }) => {
   const { socialMedias } = data;
+
   return (
-    <div className="gap-x-5 justify-center gap-2 flex flex-row md:fixed md:flex-col sm:bottom-0 xl:-ml-48 lg:-ml-20 md:-ml-16">
+    <div
+      className={`gap-x-5 flex justify-center gap-2 flex-row md:fixed md:flex-col sm:bottom-0 lg:-ml-20 md:-ml-16 transition-all ease-in	duration-500 ${
+        height > 250 ? "opacity-1" : "opacity-0"
+      }`}
+    >
       {socialMedias?.map(({ icon, link, ...styles }) => {
         return (
           <div

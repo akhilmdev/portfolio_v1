@@ -11,7 +11,7 @@ const AvatarComponent: React.FC<Props> = ({
   wrapperStyles = "",
 }) => {
   return (
-    <div className={`w-1/3 ${wrapperStyles}`}>
+    <div className={`md:w-1/3 h-auto ${wrapperStyles}`}>
       <img src={imageURL} alt="profile image" className={`${imageStyles}`} />
     </div>
   );

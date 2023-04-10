@@ -20,7 +20,7 @@ function App() {
       <Experience cols={4} style={"grid-cols-4"} />
       <ExperienceList />
       <Works />
-      <ContactMe />
+      <ContactMe height={height} />
       <ScrollTop height={height} />
     </div>
   );

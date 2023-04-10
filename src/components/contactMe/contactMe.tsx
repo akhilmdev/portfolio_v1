@@ -3,9 +3,11 @@ import { COLOR } from "../../config/colors";
 import { data } from "../../config/dataSet";
 import SocialMedias from "../common/SocialMedias";
 
-interface Props {}
+interface Props {
+  height: number;
+}
 
-const ContactMe: React.FC<Props> = () => {
+const ContactMe: React.FC<Props> = ({ height }) => {
   const {
     contactMe: { title, description, buttonText, footerMessage },
   } = data;
@@ -27,7 +29,7 @@ const ContactMe: React.FC<Props> = () => {
         </button>
       </div>
 
-      <SocialMedias />
+      <SocialMedias height={height} />
       <p className="-mb-12 text-bold text-xs italic">
         {ReactHtmlParser(footerMessage)}
       </p>

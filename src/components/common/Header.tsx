@@ -18,11 +18,11 @@ const Header: React.FC<Props> = ({
     <div
       className={`flex border-solid border-b p-4 ${COLOR.boaderColor} ${wrapperStyles}`}
     >
-      <p className="flex m-auto ml-0 font-bold text-3xl grow-1 font-alkatra">
+      <p className="flex m-auto ml-0 font-bold text-3xl grow-1 font-alkatra lg:mt-6 md:mt-5">
         {name}
       </p>
       <Menu items={items} />
-      <a href={resumeURL} download="resume" className="hidden md:inline">
+      <a href={resumeURL} download="resume" className="hidden sm:inline">
         <button
           className={`absolute lg:top-8 md:top-6 right-10 hover:border-black flex gap-4 rounded-full ${COLOR.background900} ${COLOR.text100}`}
         >

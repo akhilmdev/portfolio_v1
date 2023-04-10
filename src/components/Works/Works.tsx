@@ -26,7 +26,7 @@ const Works: React.FC<Props> = () => {
               <img
                 src={work.imageURL}
                 alt="project screen short"
-                className={`md:w-3/5 invert-35 hover:invert-0 rounded-lg sm:w-full`}
+                className={`md:w-3/5 hover:invert-[.1] invert-0 rounded-lg sm:w-full drop-shadow-2xl`}
               />
               <div
                 className={` sm:w-full md:w-3/5 my-auto flex flex-col gap-4 z-10 sm:absolute md:relative sm:p-6  ${

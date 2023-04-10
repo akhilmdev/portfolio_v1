@@ -13,7 +13,9 @@ const HomeRight: React.FC<Props> = ({
   homeRight: { description, hireMe },
 }) => {
   return (
-    <div className={`flex-col my-auto w-1/3 ${wrapperStyles}`}>
+    <div
+      className={`flex-col mb-40 mt-0 md:my-auto w-full px-16 md:px-4 md:w-1/3 ${wrapperStyles}`}
+    >
       <div className="lg:text-2xl md:text-lg uppercase mb-6 leading-8 font-alkatra text-center">
         {description}
       </div>
