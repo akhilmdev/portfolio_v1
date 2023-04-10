@@ -4,7 +4,6 @@ interface Props {
   height: number;
 }
 const ScrollTop: React.FC<Props> = ({ height }) => {
-  console.log(height, "======");
   return (
     <div
       className={"fixed bottom-4 right-4 cursor-pointer hidden md:inline"}

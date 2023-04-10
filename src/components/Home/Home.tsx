@@ -14,7 +14,7 @@ const Home: React.FC<Props> = () => {
   return (
     <div className="">
       <Header {...header} />
-      <div className="h-screen w-full	flex">
+      <div className="h-screen lg:w-11/12 xl:w-full	flex flex-col	md:flex-row">
         <HomeLeft homeLeft={homeLeft} />
         <AvatarComponent
           imageURL={imageURL}
