@@ -20,7 +20,7 @@ const Experience = ({ cols, style }: any) => {
         />
       </div>
 
-      <div className={`grid ${style} mx-20 mb-28 pt-2`}>
+      <div className={`grid  sm:mx-20 mb-28 pt-2 ${style}`}>
         {experiencePage.experience.map((_item, _index) => (
           <div key={_item.description} className={findClass(_index)}>
             <TextComponent
@@ -30,7 +30,7 @@ const Experience = ({ cols, style }: any) => {
               textStyles={
                 "leading-none font-serif text-xs text-zinc-600 border-2 border-white pt-2 text-left"
               }
-              wrapperStyles="h-32 p-4 flex flex-col justify-start items-center"
+              wrapperStyles=" h-32 p-4 flex flex-col justify-start items-center"
             />
           </div>
         ))}

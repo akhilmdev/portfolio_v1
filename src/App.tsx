@@ -17,7 +17,10 @@ function App() {
   return (
     <div className="h-screen w-full bg-white relative">
       <Home />
-      <Experience cols={4} style={"grid-cols-4"} />
+      <Experience
+        cols={screen.width >= 800 ? 4 : 2}
+        style={screen.width >= 800 ? "grid-cols-4" : "grid-cols-2"}
+      />
       <ExperienceList />
       <Works />
       <ContactMe />

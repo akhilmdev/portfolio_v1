@@ -11,7 +11,7 @@ const ExperienceList = () => {
       </p>
       <div className="timeline">
         {experience.map((item: any, index) =>
-          (index + 1) % 2 === 0 ? (
+          (index + 1) % 2 === 0 || screen.width<=800 ? (
             <>
               <div className="timeline__component">
                 <div className={"timeline__date timeline__date--right italic"}>
