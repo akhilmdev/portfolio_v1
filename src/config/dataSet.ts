@@ -1,6 +1,6 @@
 export const data = {
   home: {
-    imageURL: "../assets/profileImage.jpg",
+    imageURL: "./assets/profileImage.jpg",
     header: {
       resumeURL: "./Resume.pdf",
       items: [
@@ -44,55 +44,55 @@ export const data = {
       "3 years of experience in web development  and proficient in below mentioned skills",
     experience: [
       {
-        image: "../assets/javascript.png",
+        image: "./assets/javascript.png",
         description: "3 years of exp in javascript",
       },
       {
-        image: "../assets/testing.png",
+        image: "./assets/testing.png",
         description:
           "good knowledge in unit testing using enzyme and react testing library",
       },
 
       {
-        image: "../assets/big-data.png",
+        image: "./assets/big-data.png",
         description: "expertise in working with firebase and cloud systems",
       },
       {
-        image: "../assets/htmlcss.png",
+        image: "./assets/htmlcss.png",
         description: "3 years of experience in html and css",
       },
       {
-        image: "../assets/react.png",
+        image: "./assets/react.png",
         description: "Proficient in reactJs including hooks and redux store",
       },
       {
-        image: "../assets/aws.svg",
+        image: "./assets/aws.svg",
         description: "Certification in AWS Solution Architect",
       },
       {
-        image: "../assets/javascript.png",
+        image: "./assets/javascript.png",
         description: "3 years of exp in javascript",
       },
       {
-        image: "../assets/testing.png",
+        image: "./assets/testing.png",
         description:
           "good knowledge in unit testing using enzyme and react testing library",
       },
 
       {
-        image: "../assets/big-data.png",
+        image: "./assets/big-data.png",
         description: "expertise in working with firebase and cloud systems",
       },
       {
-        image: "../assets/htmlcss.png",
+        image: "./assets/htmlcss.png",
         description: "3 years of experience in html and css",
       },
       {
-        image: "../assets/react.png",
+        image: "./assets/react.png",
         description: "Proficient in reactJs including hooks and redux store",
       },
       {
-        image: "../assets/aws.svg",
+        image: "./assets/aws.svg",
         description: "Certification in AWS Solution Architect",
       },
     ],
@@ -129,25 +129,25 @@ export const data = {
     {
       title: "Featured Project",
       name: "potfolio",
-      imageURL: "../assets/portfolio.png",
+      imageURL: "./assets/portfolio.png",
       description:
         "Lorem ipsum is simply dummy text of the printing and typesetting industry. <b>lorem ipsum has been</b>, lorem ipsum has been lorem ipsum has been card",
       tools: ["vs code", "git"],
       links: [
-        { icon: "../assets/github.png", link: "https://github.com/akhilmdev" },
-        { icon: "../assets/share.png", link: "https://github.com/akhilmdev" },
+        { icon: "./assets/github.png", link: "https://github.com/akhilmdev" },
+        { icon: "./assets/share.png", link: "https://github.com/akhilmdev" },
       ],
     },
     {
       title: "Featured Project",
       name: "potfolio",
-      imageURL: "../assets/portfolio.png",
+      imageURL: "./assets/portfolio.png",
       description:
         "Lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been, lorem ipsum has been lorem ipsum has been card",
       tools: ["vs code", "git"],
       links: [
-        { icon: "../assets/github.png", link: "https://github.com/akhilmdev" },
-        { icon: "../assets/share.png", link: "https://github.com/akhilmdev" },
+        { icon: "./assets/github.png", link: "https://github.com/akhilmdev" },
+        { icon: "./assets/share.png", link: "https://github.com/akhilmdev" },
       ],
     },
   ],
@@ -162,15 +162,15 @@ export const data = {
   },
   socialMedias: [
     {
-      icon: "../assets/linkedin.png",
+      icon: "./assets/linkedin.png",
       link: "https://www.linkedin.com/in/akhilmohanan640/",
     },
     {
-      icon: "../assets/github.png",
+      icon: "./assets/github.png",
       link: "https://github.com/akhilmdev",
     },
     {
-      icon: "../assets/instagramHover.png",
+      icon: "./assets/instagramHover.png",
       link: "https://www.instagram.com/akhilmohanan12/",
     },
   ],
