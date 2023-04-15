@@ -17,7 +17,7 @@ const Works: React.FC<Props> = () => {
       </p>
       {works.map((work, index) => {
         return (
-          <div key={work.name} className="w-full sm:relative">
+          <div key={work.name} className="w-full relative">
             <div
               className={`flex mt-24 ${
                 isEven(index) ? "" : "flex-row-reverse"
@@ -26,13 +26,13 @@ const Works: React.FC<Props> = () => {
               <img
                 src={work.imageURL}
                 alt="project screen short"
-                className={`md:w-3/5 hover:invert-[.1] invert-0 rounded-lg sm:w-full drop-shadow-2xl`}
+                className={`md:w-3/5 hover:invert-[.1] invert-0 rounded-lg w-full drop-shadow-2xl`}
               />
               <div
-                className={` sm:w-full md:w-3/5 my-auto flex flex-col gap-4 z-10 sm:absolute md:relative sm:p-6  ${
+                className={`w-full md:w-3/5 my-auto flex flex-col gap-4 z-10 absolute md:relative sm:p-6 p-3 ${
                   isEven(index)
-                    ? "sm:text-start md:text-end md:-ml-24 xl:pr-36 lg:pr-20"
-                    : "text-start md:-mr-24 pl-36"
+                    ? "text-start md:text-end md:-ml-24 xl:pr-36 lg:pr-20"
+                    : "text-start md:-mr-24 md:pl-8"
                 }`}
               >
                 <p

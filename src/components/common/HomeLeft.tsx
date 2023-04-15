@@ -14,7 +14,7 @@ const HomeLeft: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`flex-col mt-auto mb-0 md:mt-auto md:mb-auto w-full md:w-1/3 md:ml-3 flex gap-10 px-16 md:px-4 ${wrapperStyles}`}
+      className={`flex-col mt-10 mb-0 md:mt-auto md:mb-auto w-full md:w-1/3 md:ml-3 flex gap-10 px-16 md:px-4 ${wrapperStyles}`}
     >
       <div className="lg:text-5xl md:text-4xl text-2xl font-bold  m-auto uppercase md:text-left md:mb-32 flex justify-center md:block">
         {title}
