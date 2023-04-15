@@ -2,7 +2,7 @@
   "name": "portfolio_v1",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://akhilmdev.github.io/portfolio_v1",
+  "homepage": "https://akhilmdev.github.io/portfolio_v1/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
