@@ -12,9 +12,9 @@ const Home: React.FC<Props> = () => {
     home: { homeLeft, avatar, imageURL, homeRight, header },
   } = data;
   return (
-    <div className="">
+    <div className="h-screen relative">
       <Header {...header} />
-      <div className="h-screen lg:w-11/12 xl:w-full	flex flex-col	md:flex-row">
+      <div className="min-h-screen lg:w-11/12 xl:w-full	flex flex-col	md:flex-row inherit">
         <HomeLeft homeLeft={homeLeft} />
         <AvatarComponent
           imageURL={imageURL}

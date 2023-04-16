@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen w-full bg-white relative">
+    <div className="w-full bg-white relative">
       <Home />
       <Experience cols={4} style={"grid-cols-4"} />
       <ExperienceList />

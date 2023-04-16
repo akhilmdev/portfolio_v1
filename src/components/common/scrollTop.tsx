@@ -15,7 +15,7 @@ const ScrollTop: React.FC<Props> = ({ height }) => {
         })
       }
     >
-      <img src="../assets/scroll-up.png" alt="scroll to top" />
+      <img src="./assets/scroll-up.png" alt="scroll to top" />
     </div>
   );
 };
